@@ -1,9 +1,7 @@
 import Link from 'next/link';
 
 import Layout from './../components/Layout';
-type Props = {
-    articles: []
-}
+
 let client: any = require('contentful').createClient({
     space: process.env.NEXT_CONTENTFUL_SPACE_ID,
     accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
