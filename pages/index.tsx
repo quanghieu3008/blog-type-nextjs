@@ -1,5 +1,6 @@
-import Link from 'next/link'
-// fake
+import Link from 'next/link';
+
+import Layout from './../components/Layout';
 type Props = {
     articles: []
 }
@@ -22,18 +23,7 @@ const IndexPage = ({ articles }: any) => {
     console.log(articles, "log ger");
 
     return (
-        <div>
-
-            {/* <div>
-
-                {documentToReactComponents(articles.fields.content)}
-            </div> */}
-            {/* {
-            articles.map((item: object, key: number) => {
-                console.log(item, "okeoekookeoe");
-
-                return ( */}
-
+        <Layout>
             <ul>
                 {articles.map((article: any, key: number) => (
                     <li key={key}>
@@ -43,10 +33,7 @@ const IndexPage = ({ articles }: any) => {
                     </li>
                 ))}
             </ul>
-            {/* )
-            })} */}
-
-        </div>
+        </Layout>
 
     )
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FacebookProvider, Comments } from 'react-facebook';
 
-export default class Example extends Component {
+export default class ShowComment extends Component {
 
     render() {
         const { test } = this.props;
