@@ -1,4 +1,108 @@
-.size-image {
-    width: 500px;
-    height: 500px;
+.textSize {
+    font-size: 0.8rem;
+    padding: 10px;
 }
+
+.header {
+    background-color: #f1f1f1;
+    padding: 8rem;
+    text-align: center;
+}
+
+.divCard {
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 8rem;
+}
+
+.layoutHead {
+    padding: 30px;
+    background-color: #D4DEE9;
+}
+
+.cards :hover {
+    opacity: 0.5;
+}
+
+.cardDetail a {
+    color: #334050;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layoutScreen {
+    margin: 0;
+}
+
+.layoutHead a {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.detalAll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4rem;
+}
+
+.cardDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.detalBlog {
+    max-width: 800px;
+    padding: 15px;
+    /* border-left: 2px solid #E4E7EB;
+    border-right: 2px solid #E4E7EB;
+    border-bottom: 2px solid #E4E7EB; */
+    border: 2px solid #E4E7EB;
+}
+
+.commentShow {
+    margin-top: 2.5rem;
+}
+.animation{
+    background-color: crimson;
+   
+}
+/* .layoutHead a :hover {
+    font-size: 15px;
+    color: rgb(182, 51, 51);
+    font-weight: 600;
+    margin-right: 8px;
+} */
+.header h1 {
+    
+    
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -2s;
+  }
+  .header h3 {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: -2s;
+  }
+  
+  @keyframes example {
+      
+    0%   {  left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { color: rgb(43, 52, 105); left:0px; top:0px;}
+    
+  }

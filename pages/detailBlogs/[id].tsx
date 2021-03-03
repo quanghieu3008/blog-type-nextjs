@@ -3,6 +3,7 @@ import { BLOCKS } from "@contentful/rich-text-types";
 import Image from "next/image";
 import ShowComment from '../../components/comment'
 import Layout from '../../components/Layout';
+import styles from '../../styles/index.module.css'
 let client: any = require('contentful').createClient({
     space: process.env.NEXT_CONTENTFUL_SPACE_ID,
     accessToken: process.env.NEXT_CONTENTFUL_ACCESS_TOKEN,
@@ -42,8 +43,8 @@ export default function detailBlogs({ articles, test }: any) {
 
     return (
         <Layout>
-            <div>
-                <div>
+            <div className={styles.detalAll} >
+                <div className={styles.detalBlog}>
 
                     {documentToReactComponents(articles.fields.content,
                         {
@@ -58,11 +59,11 @@ export default function detailBlogs({ articles, test }: any) {
                             }
                         }
                     )}
-                    <div>
-
+                    <div className={styles.commentShow}>
                         <ShowComment test={test} />
                     </div>
                 </div>
+
             </div>
         </Layout>
     )
